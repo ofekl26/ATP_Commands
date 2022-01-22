@@ -11,6 +11,7 @@ using System.IO.Ports;
 using System.IO;
 using System.Threading;
 using System.Net.NetworkInformation;
+using CustomControls_TelleCollege;
 
 namespace ATP_Commands_NEW
 {

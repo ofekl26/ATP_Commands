@@ -8,3 +8,16 @@ C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_C
 C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.CoreCompileInputs.cache
 C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.exe
 C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.pdb
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\ATP_Commands_NEW.exe.config
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\ATP_Commands_NEW.exe
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\ATP_Commands_NEW.pdb
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.Form1.resources
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.Properties.Resources.resources
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.CopyComplete
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.exe
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.pdb
+C:\Users\Admin\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\CustomControls_TelleCollege.dll

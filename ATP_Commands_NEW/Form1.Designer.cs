@@ -1,5 +1,6 @@
 ﻿using System.IO.Ports;
 using System.Collections.Generic;
+using CustomControls_TelleCollege ;
 
 
 namespace ATP_Commands_NEW
@@ -61,28 +62,31 @@ namespace ATP_Commands_NEW
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.StartBtn = new System.Windows.Forms.Button();
             this.ComDevicesCb = new System.Windows.Forms.ComboBox();
             this.StopBtn = new System.Windows.Forms.Button();
             this.RefreshBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.AddBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.RemoveBtn = new System.Windows.Forms.Button();
             this.timeTb = new System.Windows.Forms.TextBox();
             this.PortLogTb = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.topBar1 = new CustomControls_TelleCollege.TopBar();
+            this.closeButton1 = new CustomControls_TelleCollege.CloseButton();
+            this.minimizeButton1 = new CustomControls_TelleCollege.MinimizeButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // StartBtn
             // 
-            this.StartBtn.Location = new System.Drawing.Point(12, 44);
+            this.StartBtn.Location = new System.Drawing.Point(361, 367);
             this.StartBtn.Name = "StartBtn";
-            this.StartBtn.Size = new System.Drawing.Size(133, 45);
+            this.StartBtn.Size = new System.Drawing.Size(78, 30);
             this.StartBtn.TabIndex = 0;
             this.StartBtn.Text = "Start";
             this.StartBtn.UseVisualStyleBackColor = true;
@@ -91,16 +95,16 @@ namespace ATP_Commands_NEW
             // ComDevicesCb
             // 
             this.ComDevicesCb.FormattingEnabled = true;
-            this.ComDevicesCb.Location = new System.Drawing.Point(12, 17);
+            this.ComDevicesCb.Location = new System.Drawing.Point(361, 340);
             this.ComDevicesCb.Name = "ComDevicesCb";
-            this.ComDevicesCb.Size = new System.Drawing.Size(427, 21);
+            this.ComDevicesCb.Size = new System.Drawing.Size(78, 21);
             this.ComDevicesCb.TabIndex = 1;
             // 
             // StopBtn
             // 
-            this.StopBtn.Location = new System.Drawing.Point(160, 44);
+            this.StopBtn.Location = new System.Drawing.Point(361, 433);
             this.StopBtn.Name = "StopBtn";
-            this.StopBtn.Size = new System.Drawing.Size(133, 45);
+            this.StopBtn.Size = new System.Drawing.Size(78, 29);
             this.StopBtn.TabIndex = 2;
             this.StopBtn.Text = "Stop";
             this.StopBtn.UseVisualStyleBackColor = true;
@@ -108,63 +112,30 @@ namespace ATP_Commands_NEW
             // 
             // RefreshBtn
             // 
-            this.RefreshBtn.Location = new System.Drawing.Point(306, 44);
+            this.RefreshBtn.Location = new System.Drawing.Point(361, 400);
             this.RefreshBtn.Name = "RefreshBtn";
-            this.RefreshBtn.Size = new System.Drawing.Size(133, 45);
+            this.RefreshBtn.Size = new System.Drawing.Size(78, 30);
             this.RefreshBtn.TabIndex = 3;
             this.RefreshBtn.Text = "Refresh";
             this.RefreshBtn.UseVisualStyleBackColor = true;
             this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(445, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.Location = new System.Drawing.Point(725, 12);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(63, 31);
-            this.AddBtn.TabIndex = 5;
-            this.AddBtn.Text = "Add";
-            this.AddBtn.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(445, 49);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(343, 91);
-            this.textBox2.TabIndex = 6;
-            // 
-            // RemoveBtn
-            // 
-            this.RemoveBtn.Location = new System.Drawing.Point(445, 146);
-            this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(343, 31);
-            this.RemoveBtn.TabIndex = 7;
-            this.RemoveBtn.Text = "Remove";
-            this.RemoveBtn.UseVisualStyleBackColor = true;
-            // 
             // timeTb
             // 
             this.timeTb.Enabled = false;
-            this.timeTb.Location = new System.Drawing.Point(445, 209);
+            this.timeTb.Location = new System.Drawing.Point(12, 340);
             this.timeTb.Multiline = true;
             this.timeTb.Name = "timeTb";
-            this.timeTb.Size = new System.Drawing.Size(343, 229);
+            this.timeTb.Size = new System.Drawing.Size(343, 122);
             this.timeTb.TabIndex = 8;
             // 
             // PortLogTb
             // 
             this.PortLogTb.HideSelection = false;
-            this.PortLogTb.Location = new System.Drawing.Point(12, 95);
+            this.PortLogTb.Location = new System.Drawing.Point(483, 47);
             this.PortLogTb.Multiline = true;
             this.PortLogTb.Name = "PortLogTb";
-            this.PortLogTb.Size = new System.Drawing.Size(427, 343);
+            this.PortLogTb.Size = new System.Drawing.Size(305, 415);
             this.PortLogTb.TabIndex = 9;
             this.PortLogTb.TextChanged += new System.EventHandler(this.PortLogTb_TextChanged);
             // 
@@ -184,23 +155,85 @@ namespace ATP_Commands_NEW
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // topBar1
+            // 
+            this.topBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.topBar1.Location = new System.Drawing.Point(2, -5);
+            this.topBar1.Name = "topBar1";
+            this.topBar1.Size = new System.Drawing.Size(760, 49);
+            this.topBar1.TabIndex = 10;
+            // 
+            // closeButton1
+            // 
+            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton1.FlatAppearance.BorderSize = 0;
+            this.closeButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.closeButton1.Location = new System.Drawing.Point(767, 4);
+            this.closeButton1.Name = "closeButton1";
+            this.closeButton1.Size = new System.Drawing.Size(21, 23);
+            this.closeButton1.TabIndex = 11;
+            this.closeButton1.UseVisualStyleBackColor = true;
+            // 
+            // minimizeButton1
+            // 
+            this.minimizeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeButton1.FlatAppearance.BorderSize = 0;
+            this.minimizeButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeButton1.Font = new System.Drawing.Font("Century Gothic", 4.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeButton1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.minimizeButton1.Location = new System.Drawing.Point(746, 2);
+            this.minimizeButton1.Name = "minimizeButton1";
+            this.minimizeButton1.Size = new System.Drawing.Size(21, 23);
+            this.minimizeButton1.TabIndex = 12;
+            this.minimizeButton1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 47);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(427, 287);
+            this.dataGridView1.TabIndex = 13;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "../Title.png";
+            this.pictureBox1.Location = new System.Drawing.Point(323, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(193, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.PortLogTb);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.minimizeButton1);
+            this.Controls.Add(this.closeButton1);
             this.Controls.Add(this.timeTb);
-            this.Controls.Add(this.RemoveBtn);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.RefreshBtn);
             this.Controls.Add(this.StopBtn);
             this.Controls.Add(this.ComDevicesCb);
             this.Controls.Add(this.StartBtn);
+            this.Controls.Add(this.topBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,16 +254,17 @@ namespace ATP_Commands_NEW
         private System.Windows.Forms.ComboBox ComDevicesCb;
         private System.Windows.Forms.Button StopBtn;
         private System.Windows.Forms.Button RefreshBtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button AddBtn;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button RemoveBtn;
         private System.Windows.Forms.TextBox timeTb;
         private System.Windows.Forms.TextBox PortLogTb;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Timer timer1;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Timer timer2;
+        private CustomControls_TelleCollege.TopBar topBar1;
+        private CustomControls_TelleCollege.CloseButton closeButton1;
+        private CustomControls_TelleCollege.MinimizeButton minimizeButton1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
