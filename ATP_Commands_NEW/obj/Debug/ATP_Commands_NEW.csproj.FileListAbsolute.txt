@@ -1,0 +1,10 @@
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\ATP_Commands_NEW.exe.config
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\ATP_Commands_NEW.exe
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\bin\Debug\ATP_Commands_NEW.pdb
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csprojAssemblyReference.cache
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.Form1.resources
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.Properties.Resources.resources
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.GenerateResource.cache
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.csproj.CoreCompileInputs.cache
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.exe
+C:\Users\Cellular\source\repos\ATP_Commands_NEW\ATP_Commands_NEW\obj\Debug\ATP_Commands_NEW.pdb
